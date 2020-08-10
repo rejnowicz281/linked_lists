@@ -131,7 +131,8 @@ class LinkedList
     if index > size - 1
       index = size - 1
     elsif index < 0
-      index = 0
+      @size -= 1
+      return @head = Node.new(@head.next_node.value, @head.next_node.next_node)
     end
 
     current = @head 
