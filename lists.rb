@@ -37,6 +37,7 @@ class LinkedList
 
   def at(index)
     return "There is nothing to search for" if @head == nil
+    index = 0 if index < 0
 
     current = @head
     i = 0
@@ -111,6 +112,8 @@ class LinkedList
   def insert_at(value, index)
     if index > size - 1 
       return append(value)
+    elsif index < 0
+      return preppend(value)
     end
 
     current = @head 
@@ -127,6 +130,8 @@ class LinkedList
   def remove_at(index)
     if index > size - 1
       index = size - 1
+    elsif index < 0
+      index = 0
     end
 
     current = @head 
