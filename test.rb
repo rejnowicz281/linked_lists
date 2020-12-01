@@ -59,6 +59,6 @@ puts
 puts "head: #{list.head.value}"
 puts "tail: #{list.tail.value}"
 puts "size: #{list.size}"
-puts "at index 4: #{list.at(4)}"
+puts "at index 4: #{list.at(4).value}"
 puts "list contains 11? #{list.contains?(11)}"
 puts "find 11's index: #{list.find(11)}"
