@@ -143,5 +143,3 @@ class LinkedList
       preview
   end 
 end 
-
-list = LinkedList.new 
